@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|AnyCPU">
+      <Configuration>Debug</Configuration>
+      <Platform>AnyCPU</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|AnyCPU">
+      <Configuration>Release</Configuration>
+      <Platform>AnyCPU</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CK.TypeCastHandler\CK.TypeCastHandler.csproj" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>f278a377-44ec-46ed-8963-9f58f3b59ffb</ProjectGuid>
+  </PropertyGroup>
+  <PropertyGroup>
+    <NuProjPath Condition=" '$(NuProjPath)' == '' ">$(MSBuildExtensionsPath)\NuProj\</NuProjPath>
+  </PropertyGroup>
+  <Import Project="$(NuProjPath)\NuProj.props" Condition="Exists('$(NuProjPath)\NuProj.props')" />
+  <PropertyGroup Label="Configuration">
+    <Id>CK.TypeCastHandler</Id>
+    <Version>0.0.1</Version>
+    <Title>CK.TypeCastHandler</Title>
+    <Authors>Collin Kruger</Authors>
+    <Owners>Collin Kruger</Owners>
+    <Summary>CK.TypeCastHandler</Summary>
+    <Description>CK.TypeCastHandler</Description>
+    <ReleaseNotes>
+    </ReleaseNotes>
+    <ProjectUrl>https://github.com/collinkruger/CK.TypeCastHandler</ProjectUrl>
+    <LicenseUrl>https://github.com/collinkruger/CK.TypeCastHandler/blob/master/LICENSE</LicenseUrl>
+    <Copyright>Copyright © Collin Kruger</Copyright>
+    <Tags>CK.TypeCastHandler</Tags>
+  </PropertyGroup>
+  <Import Project="$(NuProjPath)\NuProj.targets" />
+</Project>
