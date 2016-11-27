@@ -36,6 +36,16 @@ namespace CK.TypeCastHandler
                 return new ValueAndParentNomad_ForElseIs<TParent>(Parent, Value, true);
             }
 
+            public ValueAndParentNomad_ForElseIs<TParent> ElseIs<TObject>(Action<TObject> action)
+            {
+                if (Handled || !(Value is TObject))
+                    return this;
+
+                action((TObject)Value);
+
+                return new ValueAndParentNomad_ForElseIs<TParent>(Parent, Value, true);
+            }
+
 
             // Methods - Else ----------------------------------------
 

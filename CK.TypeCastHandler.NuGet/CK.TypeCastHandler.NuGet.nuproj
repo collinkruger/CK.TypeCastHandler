@@ -22,7 +22,7 @@
   <Import Project="$(NuProjPath)\NuProj.props" Condition="Exists('$(NuProjPath)\NuProj.props')" />
   <PropertyGroup Label="Configuration">
     <Id>CK.TypeCastHandler</Id>
-    <Version>0.0.1</Version>
+    <Version>0.0.2</Version>
     <Title>CK.TypeCastHandler</Title>
     <Authors>Collin Kruger</Authors>
     <Owners>Collin Kruger</Owners>
